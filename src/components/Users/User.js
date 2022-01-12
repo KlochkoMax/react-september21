@@ -1,11 +1,11 @@
 import React from 'react';
 
-const User = ({key,user}) => {
+const User = ({user}) => {
+    // console.log(user)
     return (
         <div>
-            <ul>
-                <li>{Object.keys(user)}</li>
-            </ul>
+            <h4>{user.name}</h4>
+            <p><b>username</b> - {user.username},  <b>email</b> - {user.email}</p>
         </div>
     );
 };
