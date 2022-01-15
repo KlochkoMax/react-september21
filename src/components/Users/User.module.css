@@ -1,0 +1,11 @@
+.user {
+    display: flex;
+}
+
+h5 {
+    margin-top: 3%;
+}
+
+button {
+    margin: auto 15px;
+}

@@ -1,7 +1,9 @@
 
 const mainUrl = 'https://jsonplaceholder.typicode.com'
 
+export default mainUrl
+
 export const urls = {
-    users: `${mainUrl}/users`,
-    posts: `${mainUrl}/posts`,
+    users: `/users`,
+    posts: `/posts`,
 }

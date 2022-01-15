@@ -1,13 +1,15 @@
 import React from 'react';
-import {userServices} from "../../services/user.services";
 
+import css from './User.module.css'
 
-const User = ({user}) => {
-    console.log(userServices.usersAll())
+const User = ({user,getUser}) => {
+
+    let {name} = user
 
     return (
-            <div className={'user'}>
-                <h5>{user.name}</h5>
+            <div className={css.user}>
+                <h5>{name}</h5>
+                <button onClick={()=>getUser(user)}>get details</button>
             </div>
     );
 };

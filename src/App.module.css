@@ -1,0 +1,14 @@
+.app {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.users {
+    width: 46%;
+    height: 250px;
+    border: 2px solid grey;
+    margin: 5px;
+    padding: 0 10px;
+    overflow: scroll;
+}
+
