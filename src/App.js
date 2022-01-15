@@ -16,19 +16,22 @@ function App() {
   let getUser = (user) => {
         setUser(user)
   }
-  console.log(user)
-  let [postsId, setPostsId]= useState(null)
+
+
+
+  let [id, setId]= useState(null)
 
   let getId = (id) => {
-        setPostsId(postsId)
+        setId(id)
   }
-  console.log(postsId)
+
+
 
   return (
     <div className={css.app}>
         <Users getUser = {getUser}/>
-        <UserDetails user={user} />
-        {/*<Posts id={[postsId]}/>*/}
+        {user &&<UserDetails user={user} getId={getId} />}
+        {id && <Posts id ={id}/>}
     </div>
   );
 }
