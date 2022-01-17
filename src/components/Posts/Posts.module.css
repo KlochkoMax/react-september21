@@ -2,4 +2,7 @@
     width: 97%;
     height: 270px;
     border: 2px solid grey;
+    margin: 7px;
+    overflow: scroll;
+
 }

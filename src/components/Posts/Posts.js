@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 import {postService} from "../../services/post.service";
 import Post from "./Post";
+import css from './Posts.module.css'
 
 const Posts = ({id}) => {
 
@@ -16,7 +17,7 @@ const Posts = ({id}) => {
 
 
     return (
-        <div>
+        <div className={css.posts}>
             {
                 posts.map(value => <Post key={value.id} post={value}/>)
             }
