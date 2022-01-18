@@ -1,0 +1,10 @@
+.detailsBlock {
+    height: 60%;
+}
+
+.outletBlock {
+    height: 30vh;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 5px 0;
+}

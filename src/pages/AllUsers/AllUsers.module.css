@@ -1,0 +1,23 @@
+.body {
+    width:98%;
+    height: calc(100vh - 130px);;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body h2 {
+    text-decoration: underline;
+}
+
+.usersBody{
+    width:48%;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.outletBody {
+    width: 48%;
+    border: 1px solid black;
+    padding-left: 10px;
+}

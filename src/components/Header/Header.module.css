@@ -1,0 +1,33 @@
+.header {
+    min-height: 50px;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header h2 {
+    font-size: 35px;
+    text-decoration: brown;
+}
+
+
+.footer {
+    min-height: 30px;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 30px;
+    font-weight: bold;
+}
+
+.outlet {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+.header h2 [class='active']{
+    text-decoration: underline;
+}

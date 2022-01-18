@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import {Routes, Route} from "react-router-dom";
+
+
+import AllUsersPage from "./pages/AllUsers/AllUsersPage";
+import AllPostsPage from "./pages/AllPosts/AllPostsPage";
+import Header from "./components/Header/Header";
+import UserDetails from "./pages/UserDetails/UserDetails";
+import PostDetails from "./pages/PostDetails/PostDetails";
+import AllUserPosts from "./pages/AllUserPosts/AllUserPosts";
+import PostAllComments from "./components/PostAllComments/PostAllComments";
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+        <div>
+            <Routes>
+              <Route path={'/'} element={<Header/>}>
+                  <Route path={'/users'} element={<AllUsersPage/>}>
+                      <Route path={'/users/:id'} element={<UserDetails/>}>
+                          <Route path={':user_posts'} element={<AllUserPosts/>}/>
+                      </Route>
+                  </Route>
+                  <Route path={'/posts'} element={<AllPostsPage/>}>
+                      <Route path={'/posts/:id'} element={<PostDetails/>}>
+                          <Route path={':post_comments'} element={<PostAllComments/>}/>
+                      </Route>
+                  </Route>
+              </Route>
+            </Routes>
+        </div>
+
     </div>
   );
 }
