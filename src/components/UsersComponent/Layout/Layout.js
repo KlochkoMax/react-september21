@@ -8,6 +8,7 @@ const Layout = () => {
         <div>
             <div className={css.header}>
                 <h2><NavLink to={'/users'}>Users</NavLink></h2>
+                <h2><NavLink to={'/posts'}>Posts</NavLink></h2>
             </div>
 
 
