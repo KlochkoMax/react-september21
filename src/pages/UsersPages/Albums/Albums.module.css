@@ -1,0 +1,9 @@
+.albums {
+    height: 150px;
+    overflow: auto;
+    margin-left: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+

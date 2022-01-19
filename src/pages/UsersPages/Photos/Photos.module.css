@@ -1,0 +1,4 @@
+.photos {
+    height: calc(100vh - 400px);
+    overflow-y: auto;
+}

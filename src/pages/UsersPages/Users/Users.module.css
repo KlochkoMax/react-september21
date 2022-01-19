@@ -1,0 +1,14 @@
+.users,.albums{
+    width: 48%;
+    height: calc(100vh - 157px);
+    overflow-y: auto;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+    margin: auto;
+}
+
+
+.body {
+    display: flex;
+}

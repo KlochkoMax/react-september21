@@ -1,0 +1,12 @@
+.userBlock {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.userBlock button {
+    display: inline;
+    height: 20px;
+    width: 100px;
+    margin-left: 10px;
+}

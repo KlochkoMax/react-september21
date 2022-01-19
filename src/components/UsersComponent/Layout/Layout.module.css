@@ -1,0 +1,35 @@
+.header {
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    background-color: grey;
+    margin-top: 1px;
+}
+
+.header h2 {
+    font-size: 40px;
+}
+
+.header h2 [class = 'active']{
+    text-decoration: underline;
+}
+
+.outlet {
+    height: calc(100vh - 157px);
+    width: 96%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.footer {
+    height: 35px;
+    display: flex;
+    padding-right: 20px;
+    justify-content: right;
+    background-color: grey;
+    color: black;
+    align-items: center;
+    font-weight: bold;
+}
