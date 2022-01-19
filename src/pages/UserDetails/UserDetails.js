@@ -30,7 +30,7 @@ const UserDetails = () => {
             {
                 details && (
                     <div>
-                        <div className={css.detailsBlock}>
+                        <div>
                         <h3>User details :</h3>
                         <p>Id : {details.id}</p>
                         <p>Name : {details.name}</p>
@@ -40,7 +40,7 @@ const UserDetails = () => {
                         <p>Phone : {details.phone}</p>
                         <Link to={'user_posts'}><button>Show posts</button></Link>
                         </div>
-                        <div className={css.outletBlock}>
+                        <div className={css.outlet}>
                             <Outlet/>
                         </div>
                     </div>

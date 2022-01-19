@@ -3,6 +3,7 @@
     height: calc(100vh - 130px);;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
 }
 
 .body h2 {
@@ -13,8 +14,10 @@
     width: 48%;
     overflow-y: auto;
     padding-left: 10px;
+    border: 1px solid black;
 }
 
 .postsBody {
+
     overflow-y: auto;
 }

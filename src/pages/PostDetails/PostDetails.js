@@ -1,6 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import {Link, Outlet, useLocation, useParams} from "react-router-dom";
+
 import {PostsLink} from "../../services/postsLink";
+import css from "./PostDetails.module.css";
+
 
 const PostDetails = () => {
 
@@ -34,7 +37,7 @@ const PostDetails = () => {
                             <Link to={'post_comments'}><button>Show all comments to this post</button></Link>
                         </div>
 
-                        <div>
+                        <div className={css.comments}>
                             <Outlet/>
                         </div>
                     </div>

@@ -1,11 +1,12 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import css from "./User.module.css"
 
 const User = ({user}) => {
     let {id, name} = user
     return (
-        <div>
-            <Link to={id+''} state={user}>{id}. {name}</Link>
+        <div className={css.user}>
+            <NavLink to={id+''} state={user}><p>{id}. {name}</p></NavLink>
 
             <hr/>
         </div>

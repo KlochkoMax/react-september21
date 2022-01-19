@@ -1,13 +1,15 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+
+import css from "./Post.module.css"
 
 const Post = ({post}) => {
 
     let {id, title} = post
 
     return (
-        <div>
-            <Link to={id+''} state={post}>{id}. {title}</Link>
+        <div className={css.user}>
+            <NavLink to={id+''} state={post}><p>{id}. {title}</p></NavLink>
             <hr/>
         </div>
     );

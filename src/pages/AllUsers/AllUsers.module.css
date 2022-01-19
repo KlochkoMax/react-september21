@@ -4,20 +4,17 @@
     overflow: auto;
     display: flex;
     justify-content: space-around;
+    margin: auto;
 }
 
 .body h2 {
     text-decoration: underline;
 }
 
-.usersBody{
+.usersBody,.outletBody{
     width:48%;
     border: 1px solid black;
+    overflow-y: auto;
     padding-left: 10px;
-}
-
-.outletBody {
-    width: 48%;
-    border: 1px solid black;
-    padding-left: 10px;
+    max-height: 100vh;
 }

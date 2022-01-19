@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import {PostsLink} from "../../services/postsLink";
 import AllUserPost from "../../components/AllUserPost/AllUserPost";
-import css from "./AllUserPosts.module.css"
+
 
 const AllUserPosts = () => {
 

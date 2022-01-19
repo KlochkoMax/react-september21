@@ -1,7 +1,7 @@
-.outlet {
-    height : calc(100vh - 440px);
+.comments {
+    height : calc(100vh - 400px);
     overflow : hidden;
     overflow : auto;
-    margin-top: 15px;
+    margin-top: 10px;
     border-top: 1px solid black;
 }

@@ -1,0 +1,7 @@
+.user p {
+    font-weight: bold;
+}
+
+.user [class='active'] {
+    color: brown;
+}
