@@ -28,7 +28,7 @@ const Form = () => {
                 <label>Brand: <input
                     type="text"
                     {...register('brand',{
-                        required: 'Field is required!'
+                        required: 'This field is required!'
                     })}/>
                 </label>
                 <div>
@@ -36,9 +36,9 @@ const Form = () => {
                 </div>
 
                 <label>Price: <input
-                    type="text"
+                    type="number"
                     {...register('price',{
-                        required: 'Field is required!',
+                        required: 'This field is required!',
                     })}/>
                 </label>
                 <div>
@@ -46,7 +46,7 @@ const Form = () => {
                 </div>
 
                 <label>Year:  <input
-                    type="text"
+                    type="number"
                     {...register('year',{
                         required:true,
                         maxLength: {
@@ -60,7 +60,7 @@ const Form = () => {
                     })}/>
                 </label>
                 <div>
-                    {errors?.year && <p>{errors?.year?.message || 'Field is required!' }</p>}
+                    {errors?.year && <p>{errors?.year?.message || 'This field is required!' }</p>}
                 </div>
 
                 <input type="submit"/>
