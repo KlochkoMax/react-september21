@@ -25,14 +25,14 @@ const Form = () => {
             <h1>Add a new car<hr/></h1>
             <form onSubmit={handleSubmit(submit)}>
 
-                <label>Brand: <input
+                <label>Model: <input
                     type="text"
-                    {...register('brand',{
+                    {...register('model',{
                         required: 'This field is required!'
                     })}/>
                 </label>
                 <div>
-                    {errors?.brand && <p>{errors?.brand?.message || "Error"}</p>}
+                    {errors?.model && <p>{errors?.model?.message || "Error"}</p>}
                 </div>
 
                 <label>Price: <input
@@ -63,7 +63,7 @@ const Form = () => {
                     {errors?.year && <p>{errors?.year?.message || 'This field is required!' }</p>}
                 </div>
 
-                <input type="submit"/>
+                <input type="submit" value="Add" />
 
             </form>
         </div>
