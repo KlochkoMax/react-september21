@@ -1,0 +1,9 @@
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    height: 500px;
+}
